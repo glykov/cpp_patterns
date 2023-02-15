@@ -8,7 +8,7 @@ class Mediator
 {
 public:
     virtual ~Mediator() {}
-    virtual void notify(GameObject* sender, std::string message) = 0;
+    virtual void notify(const GameObject* sender, std::string message) = 0;
 };
 
 

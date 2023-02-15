@@ -7,7 +7,7 @@ class TeaserMediator : public Mediator
 public:
     ~TeaserMediator();
     void add_subscriber(GameObject* obj);
-    void notify(GameObject* sender, std::string message) override;
+    void notify(const GameObject* sender, std::string message) override;
 private:
     std::vector<GameObject*> subscribers;
 };

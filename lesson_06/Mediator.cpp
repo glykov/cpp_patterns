@@ -12,7 +12,7 @@ void TeaserMediator::add_subscriber(GameObject* obj)
     subscribers.push_back(obj);
 }
 
-void TeaserMediator::notify(GameObject* sender, std::string message)
+void TeaserMediator::notify(const GameObject* sender, std::string message)
 {
     for (auto obj : subscribers) {
         if (obj != sender) {
